@@ -1,0 +1,154 @@
+/* Add any CSS you need to this file. */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+body {
+  font-family: 'Goldman', sans-serif;
+  text-align: center;
+  background-color: black;
+  background-image: url(images/bg.jpg);
+  color: white;
+}
+
+header {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+header.null {
+  background-color: #141414;
+}
+
+header.N64 {
+  background-color: #01942c;
+}
+
+header.PSX {
+  background-color: gray;
+}
+
+header.Saturn {
+  background-color: blue;
+}
+
+/*Header buttons*/
+button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: x-large;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #a3c412;
+}
+
+/*product grid*/
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  row-gap: 2em;
+}
+
+.cell {
+  position: relative;
+}
+
+/*product description*/
+.desc {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  width: 500px;
+  border: 5px solid #a3c412;
+}
+
+img {
+  size: auto;
+}
+
+ul#menu {
+  font-size: larger;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 2em;
+}
+
+ul#menu li {
+  display: inline;
+}
+
+a:link,
+a:visited {
+  color: #a3c412;
+}
+
+/*Email submission forms*/
+#email {
+  height: 25px;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Orbitron', sans-serif;
+  padding: 7px;
+  transition-duration: 0.4s;
+}
+
+#submit:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #a3c412;
+}
+
+#contact {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border: 2px black solid;
+  padding-top: 5px;
+  background-color: black;
+  padding-bottom: 1em;
+  border: 2px solid white;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+input:focus {
+  border: 3px solid green;
+}
+
+input:invalid {
+  border: 3px solid red;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*hide arrows*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

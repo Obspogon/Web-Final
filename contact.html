@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!--Font Awesome Code-->
+  <script src="https://kit.fontawesome.com/ffe228bcdf.js" crossorigin="anonymous"></script>
+  <title>WEB222 Store</title>
+</head>
+
+<body>
+  <header>
+    <h1><i class="fas fa-compact-disc"></i>Lowest Poly</h1>
+
+    <h4><a href="index.html"><i class="fas fa-chevron-circle-left"></i>Go Back</a></h4>
+
+    <h2><i class="far fa-envelope"></i>Contact us</h2>
+  </header>
+
+  <main>
+    <div id="contact">
+      <h4>All fields are required</h4>
+
+      <form action="https://httpbin.org/post" method="post" id="form">
+        <label for="name">Name</label><br>
+        <input id="name" type="text" name="name" required autocomplete="name"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email2" required autocomplete="email" placeholder="ultra@lowpoly.com"><br>
+
+        <label for="address">Street Address</label><br>
+        <input type="text" name="address" id="address" autocomplete="street-address" required><br>
+
+        <label for="city">City</label><br>
+        <input name="city" type="text" id="city" list="cities" required><br>
+
+        <datalist id="cities">
+          <option value="Toronto"></option>
+          <option value="Ontario"></option>
+        </datalist>
+
+        <label for="postal" placeholder="A1A 1A1">Postal Code</label><br>
+        <input type="text" name="postal" id="postal" required autocomplete="postal-code"
+          pattern="^([a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d)$"><br>
+
+        <p>Reason for contact:</p>
+        <input type="radio" name="reason" id="question">
+        <label for="question">Question</label>
+
+        <input type="radio" name="reason" id="comment">
+        <label for="comment">Comment</label>
+
+        <input type="radio" name="reason" id="problem">
+        <label for="problem">Order Problem</label><br>
+
+        <div hidden id="onum">
+          <label for="num">Order Number</label>
+          <input type="number" name="num" id="num" placeholder="XXXXXX" min="100000" max="999999">
+        </div>
+
+        <label for="message">Your message to us:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
+
+        <div hidden>
+          <input type="text" value="Ali Abbas">
+        </div>
+        <br>
+        <input type="button" value="Submit" id="submit">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <!--Subscription-->
+    <h2>Subscribe to our newsletter</h2>
+    <form action="https://formspree.io/f/mknpqwgl" method="POST">
+      <input id="email" type="email" name="email" autocomplete="email" required placeholder="ultra@lowpoly.com">
+      <input id="submit" type="submit" value="Send">
+    </form>
+
+    <p style="margin-top: 2em;">
+      Lowest Poly &copy; Ali Abbas<br />
+      Images provided by Wikimedia Commons and are in public domain.<br />
+      Images also resized with <a href="https://resizeimage.net/">ResizeImage.net</a>.<br />
+      Background provided by <a href="https://patterncooler.com/">PatternCooler</a>. Fonts
+      provided by Google Fonts.<br />
+      Logo and social symbols provided by Font Awesome.
+    </p>
+
+    <!--Social buttons-->
+    <ul id="menu" style="font-size: xx-large; margin-bottom: 2em;">
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-tumblr"></i></li>
+    </ul>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
