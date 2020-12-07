@@ -1,6 +1,7 @@
 //Contact page script
 
 window.onload = function() {
+  //variables
   let form = document.querySelector('#form');
 
   let radioChoice = Array.from(form.reason);
@@ -15,7 +16,6 @@ window.onload = function() {
 };
 
 //functions
-
 function revealOrderNum(o) {
   o.removeAttribute('hidden');
 }

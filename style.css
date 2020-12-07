@@ -13,6 +13,7 @@ body {
 header {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
+  background-color: #141414;
 }
 
 header.null {
@@ -151,4 +152,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
+}
+
+hr {
+  width: 5in;
+  margin-top: 2em;
+  border: 1px solid white;
 }

@@ -39,13 +39,24 @@
         <datalist id="cities">
           <option value="Toronto"></option>
           <option value="Ontario"></option>
+          <option value="Vancouver"></option>
+          <option value="Montreal"></option>
+          <option value="Niagara Falls"></option>
+          <option value="Victoria"></option>
+          <option value="Halifax"></option>
+          <option value="Quebec City"></option>
+          <option value="Calgary"></option>
+          <option value="Markham"></option>
+          <option value="Alberta"></option>
+          <option value="New Brunswick"></option>
+          <option value="British Columbia"></option>
         </datalist>
 
         <label for="postal" placeholder="A1A 1A1">Postal Code</label><br>
         <input type="text" name="postal" id="postal" required autocomplete="postal-code"
           pattern="^([a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d)$"><br>
 
-        <p>Reason for contact:</p>
+        <h4>Reason for contact:</h4>
         <input type="radio" name="reason" id="question">
         <label for="question">Question</label>
 
@@ -64,15 +75,16 @@
         <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
 
         <div hidden>
-          <input type="text" value="Ali Abbas">
+          <input type="text" value="Ali Abbas" id="hidden" name="secret">
         </div>
         <br>
-        <input type="button" value="Submit" id="submit">
+        <input type="submit" value="Submit" id="submit">
       </form>
     </div>
   </main>
 
   <footer>
+    <hr>
     <!--Subscription-->
     <h2>Subscribe to our newsletter</h2>
     <form action="https://formspree.io/f/mknpqwgl" method="POST">
